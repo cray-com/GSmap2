@@ -9,7 +9,7 @@ type Props = {
 };
 
 const ATTRIBUTION_TEXT =
-  "Map data (c) OpenStreetMap contributors, licensed under the Open Database License (ODbL). Basemap (c) OpenFreeMap and OpenMapTiles. Generated with gsmap.";
+  "Map data (c) OpenStreetMap contributors, licensed under the Open Database License (ODbL). Basemap (c) OpenFreeMap and OpenMapTiles. Generated with GS Map 2.";
 
 const TOC: { id: string; label: string }[] = [
   { id: "summary", label: "Summary" },
@@ -159,7 +159,7 @@ export function LicensePage({ onBack, uiTheme, onToggleTheme, embedded = false }
                   <td>Open-source renderer with business-friendly licensing.</td>
                 </tr>
                 <tr>
-                  <td>gsmap app code</td>
+                  <td>GS Map 2 app code</td>
                   <td>MIT</td>
                   <td>The app code itself is permissive and commercial-friendly.</td>
                 </tr>
@@ -168,7 +168,7 @@ export function LicensePage({ onBack, uiTheme, onToggleTheme, embedded = false }
           </div>
 
           <div className="callout">
-            <strong>Short answer:</strong> yes, you can sell work made with gsmap
+            <strong>Short answer:</strong> yes, you can sell work made with GS Map 2
             exports. The important parts are attribution and not treating public OSM
             services like unlimited production infrastructure.
           </div>
@@ -263,7 +263,7 @@ export function LicensePage({ onBack, uiTheme, onToggleTheme, embedded = false }
             </section>
 
             <section className="license-tool-card">
-              <h3>gsmap app code</h3>
+              <h3>GS Map 2 app code</h3>
               <p>
                 This is the application code that ties the UI, export flow, and map
                 behavior together.

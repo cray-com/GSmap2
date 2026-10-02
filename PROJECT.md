@@ -2,7 +2,7 @@
 
 ## Ziel
 
-GSmap wird als browserbasierte Kartenanwendung für Publishing-Arbeiten weiterentwickelt. Nutzer wählen einen Kartenausschnitt, laden Koordinatenpunkte aus JSON und exportieren die Karte mitsamt Punkten als PNG. Für die Nutzung sind weder Konto noch Backend erforderlich.
+GS Map 2 wird als browserbasierte Kartenanwendung für Publishing-Arbeiten weiterentwickelt. Nutzer wählen einen Kartenausschnitt, laden Koordinatenpunkte aus JSON und exportieren die Karte mitsamt Punkten als PNG. Für die Nutzung sind weder Konto noch Backend erforderlich.
 
 ## Architektur
 
@@ -15,7 +15,7 @@ GSmap wird als browserbasierte Kartenanwendung für Publishing-Arbeiten weiteren
 
 ## Aktueller Fokus
 
-GSmap2 als erste veröffentlichbare Version abschließen:
+GS Map 2 als erste veröffentlichbare Version abschließen:
 
 - Menü `Labels` mit den Modi `JSON Data` und `Add on Map`. Der zweite Modus bietet ein Textfeld für die Beschriftung vor dem Platzieren. Moduswechsel erhalten Daten und beenden beim Wechsel zu JSON die Klick-Erstellung.
 - Die Karte startet in Wien bei 48.2082° N, 16.3738° E.
@@ -27,7 +27,9 @@ GSmap2 als erste veröffentlichbare Version abschließen:
 - Exportgröße vorab prüfen; bei Browser-/Grafiklimits Fehler statt still verkleinerter Ausgabe.
 - Export mit echten Browserchecks prüfen und eine aktualisierte Vorschau bereitstellen.
 
-Der bestehende SVG-Export bleibt unverändert und wird als experimentell gekennzeichnet. Eigene Veröffentlichung und Pull Requests sind ein späterer Auftrag.
+Der bestehende SVG-Export bleibt unverändert und wird als experimentell gekennzeichnet.
+
+GS Map 2 hat ein eigenständiges öffentliches Repository unter https://github.com/cray-com/GS-Map-2. Der ursprüngliche Fork https://github.com/cray-com/GSmap und das Upstream-Projekt https://github.com/hzguz/GSmap bleiben erhalten. Gemeinsame Git-Historie und MIT-Herkunft werden beibehalten. Öffentliche Bereitstellung der Anwendung und Pull Requests sind noch nicht beauftragt.
 
 ## JSON-Vertrag
 
@@ -74,4 +76,4 @@ Monochrome, Warm Paper und Blueprint verwenden Positrons vorhandene Geometrie, Z
 
 - Kartenschriften und Pin-Typografie ersetzen.
 - Größere Poster bei nachgewiesenem Bedarf aus mehreren Teilbildern zusammensetzen.
-- Eigenständige öffentliche Veröffentlichung und getrennte Pull Requests prüfen.
+- Öffentliche Bereitstellung der Anwendung und getrennte Pull Requests prüfen.

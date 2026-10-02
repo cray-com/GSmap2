@@ -1,6 +1,8 @@
-# GSmap
+# GS Map 2
 
-GSmap2 is a client-side publishing fork of [GSmap](https://github.com/hzguz/GSmap).
+[GS Map 2](https://github.com/cray-com/GS-Map-2) is a client-side publishing tool
+based on [GSmap](https://github.com/hzguz/GSmap). The original MIT license and
+upstream history are preserved.
 Select an OpenStreetMap-based area, import your points, style their labels and
 export a **PNG**. The original experimental SVG exporter remains available.
 
