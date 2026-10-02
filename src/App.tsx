@@ -344,7 +344,7 @@ export function App() {
 
   function handleSavePoints() {
     const data = JSON.stringify(pinsToGeoJson(pins), null, 2);
-    downloadBlob(new Blob([data], { type: "application/geo+json" }), "gs-map-2-points.geojson");
+    downloadBlob(new Blob([data], { type: "application/geo+json" }), "GSmap2-points.geojson");
   }
 
   function handleClearSelection() {
@@ -408,7 +408,7 @@ export function App() {
       if (!styled) return;
       const svg = generateStyledSvg(styled);
       const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-      downloadSvg(svg, `gs-map-2-${stamp}.svg`);
+      downloadSvg(svg, `GSmap2-${stamp}.svg`);
       setStatusMsg(null);
       setStatusError(false);
     } catch (err) {
@@ -458,7 +458,7 @@ export function App() {
       const options = getPngOptions();
       const size = typeof options === "number" ? map.getPngSize(bbox, options) : options;
       const png = await map.captureSelectedPng(bbox, options);
-      downloadBlob(png, `gs-map-2-${stamp}-${size.width}x${size.height}.png`);
+      downloadBlob(png, `GSmap2-${stamp}-${size.width}x${size.height}.png`);
       setStatusMsg(null);
       setStatusError(false);
     } catch (err) {
@@ -475,7 +475,7 @@ export function App() {
         <div className="nav-rail-top">
           <div className="nav-rail-brand">
             <Logo size={32} />
-            <span className="brand-name">GS Map 2</span>
+            <span className="brand-name">GSmap2</span>
           </div>
           <RailItem
             active={route === "app" && panelTab === "workspace"}

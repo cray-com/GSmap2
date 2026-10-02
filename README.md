@@ -1,10 +1,17 @@
-# GS Map 2
+# GSmap2
 
-[GS Map 2](https://github.com/cray-com/GS-Map-2) is a client-side publishing tool
-based on [GSmap](https://github.com/hzguz/GSmap). The original MIT license and
-upstream history are preserved.
-Select an OpenStreetMap-based area, import your points, style their labels and
-export a **PNG**. The original experimental SVG exporter remains available.
+Props to Gustavo for creating this tool.
+
+[GSmap2](https://github.com/cray-com/GSmap2) is a fork of
+[Gustavo's GSmap](https://github.com/hzguz/GSmap) for quickly turning JSON data
+into map visualizations you can use in editorial, print and other design layouts.
+Import JSON or GeoJSON locations, choose the label field, style the map and
+export a PNG to place in your layout. You can also add labeled points directly
+on the map. No account, backend or API key is required.
+
+This fork focuses on data import, custom labels and size-controlled PNG output.
+The original MIT license and Git history are preserved. The original SVG exporter
+remains available, but is experimental and does not reproduce every visible layer.
 
 - Search by place name (Nominatim) or by coordinates
 - Pan/zoom the map and select a rectangular area (Shift + drag)
@@ -12,9 +19,8 @@ export a **PNG**. The original experimental SVG exporter remains available.
   drag the interior to move, then **Accept** or **Revert**
 - Eight map styles: Positron, Dark, Liberty, Bright, Fiord, Monochrome,
   Warm Paper and Blueprint, with road, building and background overrides
-- Export a high-fidelity SVG that mirrors what you see on screen — colors,
-  line widths, layer order and clipping are derived from the live map style,
-  not a fixed re-styling
+- Experimental editable SVG for supported geometry layers, using the live
+  map's style. Text, icons and some paint effects are not reproduced.
 - PNG export at 1×/2×/3×/4×, custom pixel dimensions, or A4/A3 at 300 DPI
 - A **Labels** menu with **JSON Data** and **Add on Map** modes
 - Optional click-to-add mode, undo and GeoJSON download
@@ -139,7 +145,8 @@ result is one `<g>` per style layer, clipped to the exact selection rectangle:
 ```
 
 Geometry is projected with the same projection as the on-screen map (screen
-pixels), so stroke widths map 1:1 and the SVG matches the preview.
+pixels). Supported geometry follows the preview, but this is not a complete
+reconstruction of the rendered map. See the limitations below.
 
 ## Licensing & attribution
 
@@ -155,6 +162,11 @@ pixels), so stroke widths map 1:1 and the SVG matches the preview.
   OSM-based provider.
 
 ## Notes & limitations
+
+[SVG limitations](https://github.com/cray-com/GSmap2/issues/1) and the remaining
+[PNG browser verification](https://github.com/cray-com/GSmap2/issues/2) are tracked
+as issues. A small [upstream documentation PR](docs/upstream-svg-pr.md) is prepared
+but has not been submitted. It does not offer the entire fork as one large PR.
 
 - Text labels (`symbol` layers) are not vectorized: their on-screen positions
   come from a runtime collision engine that has no faithful SVG equivalent.

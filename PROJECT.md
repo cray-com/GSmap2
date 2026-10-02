@@ -2,7 +2,7 @@
 
 ## Ziel
 
-GS Map 2 wird als browserbasierte Kartenanwendung für Publishing-Arbeiten weiterentwickelt. Nutzer wählen einen Kartenausschnitt, laden Koordinatenpunkte aus JSON und exportieren die Karte mitsamt Punkten als PNG. Für die Nutzung sind weder Konto noch Backend erforderlich.
+GSmap2 ist ein Fork von Gustavos GSmap, um aus JSON-Daten schnell Kartenvisualisierungen für Layouts zu bauen. Nutzer wählen einen Kartenausschnitt, laden Koordinatenpunkte aus JSON und exportieren die Karte mitsamt Punkten als PNG. Für die Nutzung sind weder Konto noch Backend erforderlich.
 
 ## Architektur
 
@@ -15,7 +15,7 @@ GS Map 2 wird als browserbasierte Kartenanwendung für Publishing-Arbeiten weite
 
 ## Aktueller Fokus
 
-GS Map 2 als erste veröffentlichbare Version abschließen:
+GSmap2 als erste veröffentlichbare Version abschließen:
 
 - Menü `Labels` mit den Modi `JSON Data` und `Add on Map`. Der zweite Modus bietet ein Textfeld für die Beschriftung vor dem Platzieren. Moduswechsel erhalten Daten und beenden beim Wechsel zu JSON die Klick-Erstellung.
 - Die Karte startet in Wien bei 48.2082° N, 16.3738° E.
@@ -29,7 +29,9 @@ GS Map 2 als erste veröffentlichbare Version abschließen:
 
 Der bestehende SVG-Export bleibt unverändert und wird als experimentell gekennzeichnet.
 
-GS Map 2 hat ein eigenständiges öffentliches Repository unter https://github.com/cray-com/GS-Map-2. Der ursprüngliche Fork https://github.com/cray-com/GSmap und das Upstream-Projekt https://github.com/hzguz/GSmap bleiben erhalten. Gemeinsame Git-Historie und MIT-Herkunft werden beibehalten. Öffentliche Bereitstellung der Anwendung und Pull Requests sind noch nicht beauftragt.
+GSmap2 hat ein eigenständiges öffentliches Repository unter https://github.com/cray-com/GSmap2. Name und Groß-/Kleinschreibung sind ausdrücklich `GSmap2`. Der ursprüngliche Fork https://github.com/cray-com/GSmap und das Upstream-Projekt https://github.com/hzguz/GSmap bleiben erhalten. Gemeinsame Git-Historie und MIT-Herkunft werden beibehalten. Gustavo wird direkt am Anfang der README gewürdigt.
+
+Ein kleiner Upstream-PR zu den SVG-Dokumentationshinweisen ist als Branch `docs/svg-export-limitations` im ursprünglichen Fork vorbereitet. Beschreibung und Vergleich stehen in `docs/upstream-svg-pr.md`; noch kein PR wurde eingereicht. SVG-Lücken und die ausstehende PNG-Browserprüfung sind in GSmap2 als Issues [#1](https://github.com/cray-com/GSmap2/issues/1) und [#2](https://github.com/cray-com/GSmap2/issues/2) erfasst. Weitere Beiträge und eine öffentliche Bereitstellung der Anwendung bleiben spätere Entscheidungen.
 
 ## JSON-Vertrag
 

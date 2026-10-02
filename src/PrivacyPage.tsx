@@ -121,7 +121,7 @@ function ContentPtBR({ onBack }: { onBack: () => void }) {
     <>
       <h1>Política de Privacidade</h1>
       <p className="lede">
-        O GS Map 2 é uma ferramenta client-side para designers. Esta página explica de forma
+        O GSmap2 é uma ferramenta client-side para designers. Esta página explica de forma
         direta quais dados trafegam durante o uso do app e onde eles vão.
       </p>
 
@@ -131,7 +131,7 @@ function ContentPtBR({ onBack }: { onBack: () => void }) {
       </div>
 
       <h2 id="data-collected">Dados coletados</h2>
-      <p>O GS Map 2 <strong>não coleta, armazena nem transmite dados pessoais</strong> para nenhum servidor próprio.</p>
+      <p>O GSmap2 <strong>não coleta, armazena nem transmite dados pessoais</strong> para nenhum servidor próprio.</p>
       <p>Não há:</p>
       <ul>
         <li>Cadastro ou autenticação</li>
@@ -205,8 +205,8 @@ function ContentPtBR({ onBack }: { onBack: () => void }) {
       </p>
       <p>
         O código-fonte do app é aberto e pode ser auditado a qualquer momento em{" "}
-        <a href="https://github.com/cray-com/GS-Map-2" target="_blank" rel="noreferrer">
-          github.com/cray-com/GS-Map-2
+        <a href="https://github.com/cray-com/GSmap2" target="_blank" rel="noreferrer">
+          github.com/cray-com/GSmap2
         </a>.
       </p>
 
@@ -222,7 +222,7 @@ function ContentEnUS({ onBack }: { onBack: () => void }) {
     <>
       <h1>Privacy Policy</h1>
       <p className="lede">
-        GS Map 2 is a client-side tool for designers. This page explains straightforwardly
+        GSmap2 is a client-side tool for designers. This page explains straightforwardly
         which data flows during app usage and where it goes.
       </p>
 
@@ -232,7 +232,7 @@ function ContentEnUS({ onBack }: { onBack: () => void }) {
       </div>
 
       <h2 id="data-collected">Data collected</h2>
-      <p>GS Map 2 <strong>does not collect, store, or transmit personal data</strong> to any server we operate.</p>
+      <p>GSmap2 <strong>does not collect, store, or transmit personal data</strong> to any server we operate.</p>
       <p>There is no:</p>
       <ul>
         <li>Registration or authentication</li>
@@ -305,8 +305,8 @@ function ContentEnUS({ onBack }: { onBack: () => void }) {
       </p>
       <p>
         The app's source code is open and can be audited at any time at{" "}
-        <a href="https://github.com/cray-com/GS-Map-2" target="_blank" rel="noreferrer">
-          github.com/cray-com/GS-Map-2
+        <a href="https://github.com/cray-com/GSmap2" target="_blank" rel="noreferrer">
+          github.com/cray-com/GSmap2
         </a>.
       </p>
 
